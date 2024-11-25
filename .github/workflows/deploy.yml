@@ -2,40 +2,31 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [ gh-pages ]  # Trigger on gh-pages branch push
+    branches:
+      - main   # or master, depending on your branch
 
 jobs:
-  build-and-deploy:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Checkout the repository
-      - uses: actions/checkout@v2
+    - name: Checkout repository
+      uses: actions/checkout@v2
 
-      # Step 2: Setup Node.js
-      - name: Setup Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: '18'
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '16'
 
-      # Step 3: Install dependencies
-      - name: Install Dependencies
-        run: npm install
+    - name: Install dependencies
+      run: npm install
 
-      # Step 4: Build the project with Firebase environment variables
-      - name: Build
-        env:
-          VITE_FIREBASE_API_KEY: ${{ secrets.VITE_FIREBASE_API_KEY }}
-          VITE_FIREBASE_AUTH_DOMAIN: ${{ secrets.VITE_FIREBASE_AUTH_DOMAIN }}
-          VITE_FIREBASE_PROJECT_ID: ${{ secrets.VITE_FIREBASE_PROJECT_ID }}
-          VITE_FIREBASE_STORAGE_BUCKET: ${{ secrets.VITE_FIREBASE_STORAGE_BUCKET }}
-          VITE_FIREBASE_MESSAGING_SENDER_ID: ${{ secrets.VITE_FIREBASE_MESSAGING_SENDER_ID }}
-          VITE_FIREBASE_APP_ID: ${{ secrets.VITE_FIREBASE_APP_ID }}
-        run: npm run build  # Builds the project to ./dist folder
+    - name: Build project
+      run: npm run build
 
-      # Step 5: Deploy the contents of the build directory to the gh-pages branch
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        branch: gh-pages        # the branch to deploy to
+        folder: build           # the build folder to deploy
+        token: ${{ secrets.GITHUB_TOKEN }}
