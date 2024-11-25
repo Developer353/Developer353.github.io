@@ -8,7 +8,7 @@ export default function Auth() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
-  const { signIn, signUp, signInWithGoogle, signInAnonymously } = useAuth();
+  const { signIn, signUp, signInWithGoogle } = useAuth();
   const navigate = useNavigate();
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -90,7 +90,6 @@ export default function Auth() {
               </button>
             </div>
 
-            {/* Additional Sign-In Methods */}
             <div className="mt-6 text-center">
               {/* Google Sign-in Button */}
               <button
@@ -98,14 +97,6 @@ export default function Auth() {
                 className="text-white bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-md w-full mt-2"
               >
                 Sign in with Google
-              </button>
-
-              {/* Anonymous Sign-in Button */}
-              <button
-                onClick={signInAnonymously}
-                className="text-white bg-gray-500 hover:bg-gray-600 px-4 py-2 rounded-md w-full mt-2"
-              >
-                Sign in Anonymously
               </button>
             </div>
           </div>
