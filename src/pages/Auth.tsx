@@ -90,6 +90,7 @@ export default function Auth() {
               </button>
             </div>
 
+            {/* Additional Sign-In Methods */}
             <div className="mt-6 text-center">
               {/* Google Sign-in Button */}
               <button

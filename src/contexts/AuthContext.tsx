@@ -1,12 +1,12 @@
 import { createContext, useContext, ReactNode } from 'react';
-import { 
+import {
   User,
   signInWithEmailAndPassword,
   createUserWithEmailAndPassword,
   signOut as firebaseSignOut,
-  signInAnonymously as firebaseSignInAnonymously,
+  signInWithPopup,
   GoogleAuthProvider,
-  signInWithPopup
+  signInAnonymously as firebaseSignInAnonymously
 } from 'firebase/auth';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { auth } from '../lib/firebase';
