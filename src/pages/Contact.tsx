@@ -49,10 +49,10 @@ export default function Contact() {
               <div className="flex items-center">
                 <Mail className="w-5 h-5 text-gold-500 mr-3" />
                 <a
-                  href="mailto:hiwin.vblush@hotmail.com"
+                  href="mailto:booking.vblush@gmail.com"
                   className="relative text-black after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-gold-500 after:transition-all after:duration-300 hover:after:w-full"
                 >
-                  hiwin.vblush@hotmail.com
+                  booking.vblush@gmail.com
                 </a>
               </div>
               <div className="flex items-center">
