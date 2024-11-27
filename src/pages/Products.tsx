@@ -4,20 +4,17 @@ const products = [
   {
     image: 'https://images.unsplash.com/photo-1571781926291-c477ebfd024b?auto=format&fit=crop&w=800&q=80',
     title: 'Luxury Serum',
-    description: 'Advanced anti-aging formula with hyaluronic acid and peptides.',
-    price: '$89.99'
+    description: 'Advanced anti-aging formula with hyaluronic acid and peptides.'
   },
   {
     image: 'https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=800&q=80',
     title: 'Anti-Aging Cream',
-    description: 'Rich moisturizing cream with retinol and vitamin C.',
-    price: '$75.00'
+    description: 'Rich moisturizing cream with retinol and vitamin C.'
   },
   {
     image: 'https://images.unsplash.com/photo-1617897903246-719242758050?auto=format&fit=crop&w=800&q=80',
     title: 'Hydrating Lotion',
-    description: 'Lightweight, non-greasy formula for all-day hydration.',
-    price: '$45.00'
+    description: 'Lightweight, non-greasy formula for all-day hydration.'
   }
 ];
 
@@ -57,7 +54,6 @@ export default function Products() {
               </div>
               <h2 className="text-xl font-semibold mb-2">{product.title}</h2>
               <p className="text-gray-600 mb-3">{product.description}</p>
-              <p className="text-gold-600 font-semibold">{product.price}</p>
             </motion.div>
           ))}
         </div>
