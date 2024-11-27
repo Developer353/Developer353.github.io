@@ -56,6 +56,28 @@ export default function Services() {
             </motion.div>
           ))}
         </div>
+
+        {/* Fresha Booking Link */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="text-center mt-16"
+        >
+          <h2 className="text-2xl font-semibold text-gray-800 mb-6">
+            Book Your Appointment
+          </h2>
+
+          {/* Link to Fresha booking page */}
+          <a
+            href="https://www.fresha.com/book-now/v-blush-ec0j4r5b/all-offer?share&pId=1359753"
+            target="_blank" // Opens in a new tab
+            rel="noopener noreferrer"
+            className="button w-full inline-block bg-gold-600 text-white py-3 px-6 rounded-lg shadow-md hover:bg-gold-700 transition-all"
+          >
+            Book Now on Fresha
+          </a>
+        </motion.div>
       </div>
     </div>
   );
