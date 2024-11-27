@@ -61,7 +61,14 @@ export default function Contact() {
               </div>
               <div className="flex items-center">
                 <MapPin className="w-5 h-5 text-gold-500 mr-3" />
-                <span>54 Sewardstone Rd, London E4 7PR</span>
+                <a
+                  href="https://www.google.com/maps/search/54+Sewardstone+Rd,+London+E4+7PR"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="relative text-black after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-gold-500 after:transition-all after:duration-300 hover:after:w-full"
+                >
+                  54 Sewardstone Rd, London E4 7PR
+                </a>
               </div>
             </div>
           </motion.div>
