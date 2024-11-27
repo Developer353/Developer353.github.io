@@ -20,7 +20,7 @@ export default function Home() {
         <h1 className="text-4xl md:text-6xl font-bold text-gold-gradient mb-4 md:mb-6 leading-tight">
           Where Beauty Meets Elegance
         </h1>
-        <p className="text-lg md:text-xl text-white/90 mb-8 md:mb-12 max-w-2xl mx-auto px-4">
+        <p className="text-lg md:text-xl text-black mb-8 md:mb-12 max-w-2xl mx-auto px-4">
           Experience luxury beauty services and premium products crafted for those who appreciate excellence.
         </p>
         <Link 
