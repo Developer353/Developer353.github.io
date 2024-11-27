@@ -30,15 +30,30 @@ export default function Contact() {
             <div className="space-y-4">
               <div className="flex items-center">
                 <Phone className="w-5 h-5 text-gold-500 mr-3" />
-                <span>020 8637 5336</span>
+                <a
+                  href="tel:+442086375336"
+                  className="relative text-black after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-gold-500 after:transition-all after:duration-300 hover:after:w-full"
+                >
+                  020 8637 5336
+                </a>
               </div>
               <div className="flex items-center">
                 <Smartphone className="w-5 h-5 text-gold-500 mr-3" />
-                <span>07804 975806</span>
+                <a
+                  href="tel:+447804975806"
+                  className="relative text-black after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-gold-500 after:transition-all after:duration-300 hover:after:w-full"
+                >
+                  07804 975806
+                </a>
               </div>
               <div className="flex items-center">
                 <Mail className="w-5 h-5 text-gold-500 mr-3" />
-                <span>contact@vblush.com</span>
+                <a
+                  href="mailto:hiwin.vblush@hotmail.com"
+                  className="relative text-black after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-gold-500 after:transition-all after:duration-300 hover:after:w-full"
+                >
+                  hiwin.vblush@hotmail.com
+                </a>
               </div>
               <div className="flex items-center">
                 <Instagram className="w-5 h-5 text-gold-500 mr-3" />
