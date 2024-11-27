@@ -30,7 +30,7 @@ export default function Contact() {
             <div className="space-y-4">
               <div className="flex items-center">
                 <Phone className="w-5 h-5 text-gold-500 mr-3" />
-                <span>+44 20 1234 5678</span>
+                <span>020 8637 5336</span>
               </div>
               <div className="flex items-center">
                 <Mail className="w-5 h-5 text-gold-500 mr-3" />
