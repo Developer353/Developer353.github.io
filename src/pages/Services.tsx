@@ -1,24 +1,21 @@
 import { motion } from 'framer-motion';
-import { Scissors, Palette, Sparkles } from 'lucide-react';
+import { Scissors, Sparkles, Heart } from 'lucide-react'; // Added 'Heart' icon for aesthetics
 
 const services = [
   {
     icon: Sparkles,
     title: 'Luxurious Facials',
-    description: 'Indulge in our signature facial treatments, customized for your unique skin needs. Experience deep cleansing, exfoliation, and rejuvenation.',
-    price: 'From $120'
+    description: 'Indulge in our signature facial treatments, customized for your unique skin needs. Experience deep cleansing, exfoliation, and rejuvenation.'
   },
   {
-    icon: Palette,
-    title: 'Exclusive Makeup Artistry',
-    description: 'Professional makeup services for any occasion - from natural everyday looks to glamorous evening styles and bridal makeup.',
-    price: 'From $85'
+    icon: Heart, // Changed icon for Aesthetics
+    title: 'Aesthetics',
+    description: 'Explore a range of aesthetic treatments designed to rejuvenate and enhance your natural beauty. From dermal fillers to skin revitalizing treatments.'
   },
   {
     icon: Scissors,
     title: 'Hair Styling & Treatments',
-    description: 'Complete hair care services including cutting, styling, coloring, and specialized treatments for damaged hair.',
-    price: 'From $75'
+    description: 'Complete hair care services including cutting, styling, coloring, and specialized treatments for damaged hair.'
   }
 ];
 
@@ -52,7 +49,6 @@ export default function Services() {
               <service.icon className="w-12 h-12 text-gold-500 mb-4 group-hover:scale-110 transition-transform duration-300" />
               <h2 className="text-xl font-semibold mb-3">{service.title}</h2>
               <p className="text-gray-600 mb-4">{service.description}</p>
-              <p className="text-gold-600 font-semibold">{service.price}</p>
             </motion.div>
           ))}
         </div>
