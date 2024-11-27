@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Scissors, Sparkles, Heart } from 'lucide-react'; // Added 'Heart' icon for aesthetics
+import { Scissors, Sparkles, Heart, Zap, Hand, Droplet } from 'lucide-react'; // Replaced Spray with Droplet
 
 const services = [
   {
@@ -16,6 +16,21 @@ const services = [
     icon: Scissors,
     title: 'Hair Styling & Treatments',
     description: 'Complete hair care services including cutting, styling, coloring, and specialized treatments for damaged hair.'
+  },
+  {
+    icon: Zap, // Icon for Laser Hair Removal
+    title: 'Laser Hair Removal',
+    description: 'Achieve smooth, hair-free skin with our advanced laser hair removal treatments. Safe and effective for long-lasting results.'
+  },
+  {
+    icon: Hand, // Icon for Massage
+    title: 'Massage Therapy',
+    description: 'Relax and rejuvenate with our soothing massage therapy services. From deep tissue to relaxation massage, we help relieve stress and tension.'
+  },
+  {
+    icon: Droplet, // Icon for Waxing Services (replacing 'Spray' with 'Droplet')
+    title: 'Waxing Services',
+    description: 'Enjoy smooth, hair-free skin with our professional waxing services. Offering both face and body waxing treatments with quality and care.'
   }
 ];
 
