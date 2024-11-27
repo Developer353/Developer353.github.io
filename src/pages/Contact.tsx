@@ -57,7 +57,14 @@ export default function Contact() {
               </div>
               <div className="flex items-center">
                 <Instagram className="w-5 h-5 text-gold-500 mr-3" />
-                <span>@vblush.beauty</span>
+                <a
+                  href="https://www.instagram.com/vblush.beauty/profilecard/?igsh=MWltajdwOTUyM3F3NQ=="
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="relative text-black after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-gold-500 after:transition-all after:duration-300 hover:after:w-full"
+                >
+                  @vblush.beauty
+                </a>
               </div>
               <div className="flex items-center">
                 <MapPin className="w-5 h-5 text-gold-500 mr-3" />
