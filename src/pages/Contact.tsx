@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Phone, Mail, MapPin } from 'lucide-react';
+import { Phone, Mail, MapPin, Instagram, Smartphone } from 'lucide-react';
 
 export default function Contact() {
   return (
@@ -33,8 +33,16 @@ export default function Contact() {
                 <span>020 8637 5336</span>
               </div>
               <div className="flex items-center">
+                <Smartphone className="w-5 h-5 text-gold-500 mr-3" />
+                <span>07804 975806</span>
+              </div>
+              <div className="flex items-center">
                 <Mail className="w-5 h-5 text-gold-500 mr-3" />
                 <span>contact@vblush.com</span>
+              </div>
+              <div className="flex items-center">
+                <Instagram className="w-5 h-5 text-gold-500 mr-3" />
+                <span>@vblush.beauty</span>
               </div>
               <div className="flex items-center">
                 <MapPin className="w-5 h-5 text-gold-500 mr-3" />
