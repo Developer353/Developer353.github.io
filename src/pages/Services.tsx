@@ -94,7 +94,7 @@ export default function Services() {
           </div>
 
           {/* Treatwell Booking Link */}
-          <div>
+          <div className="mb-8">
             <a
               href="https://www.treatwell.co.uk/place/v-blush-hair-and-beauty/?serviceIds=TR5181175,TR5181214,TR5181181"
               target="_blank"
