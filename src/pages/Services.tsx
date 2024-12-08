@@ -38,6 +38,7 @@ export default function Services() {
   return (
     <div className="bg-white min-h-screen py-16 md:py-24">
       <div className="container mx-auto px-4">
+        {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -48,10 +49,11 @@ export default function Services() {
             Our Premium Services
           </h1>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Experience luxury beauty treatments tailored to your unique needs
+            Experience luxury beauty treatments tailored to your unique needs.
           </p>
         </motion.div>
 
+        {/* Service Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
           {services.map((service, index) => (
             <motion.div
@@ -68,7 +70,7 @@ export default function Services() {
           ))}
         </div>
 
-        {/* Fresha Booking Link */}
+        {/* Booking Section */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -79,15 +81,29 @@ export default function Services() {
             Book Your Appointment
           </h2>
 
-          {/* Link to Fresha booking page */}
-          <a
-            href="https://www.fresha.com/book-now/v-blush-ec0j4r5b/all-offer?share&pId=1359753"
-            target="_blank" // Opens in a new tab
-            rel="noopener noreferrer"
-            className="button w-full inline-block bg-gold-600 text-white py-3 px-6 rounded-lg shadow-md hover:bg-gold-700 transition-all"
-          >
-            Book Now on Fresha
-          </a>
+          {/* Fresha Booking Link */}
+          <div className="mb-8">
+            <a
+              href="https://www.fresha.com/book-now/v-blush-ec0j4r5b/all-offer?share&pId=1359753"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="button inline-block bg-gold-600 text-white py-3 px-6 rounded-lg shadow-md hover:bg-gold-700 transition-all"
+            >
+              Book Now on Fresha
+            </a>
+          </div>
+
+          {/* Treatwell Booking Link */}
+          <div>
+            <a
+              href="https://www.treatwell.co.uk/place/v-blush-hair-and-beauty/?serviceIds=TR5181175,TR5181214,TR5181181"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="button inline-block bg-gold-600 text-white py-3 px-6 rounded-lg shadow-md hover:bg-gold-700 transition-all"
+            >
+              Book Now on Treatwell
+            </a>
+          </div>
         </motion.div>
       </div>
     </div>
