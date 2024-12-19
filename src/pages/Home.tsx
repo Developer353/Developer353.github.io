@@ -1,6 +1,11 @@
 import { motion } from 'framer-motion';
 import { Sparkles } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import Shop1 from './images/Shop 1.jpeg'; // Example import for local images
+import Shop2 from './images/Shop 2.jpeg'; // Example import for local images
+import Shop3 from './images/Shop 3.jpeg'; // Example import for local images
+import Shop4 from './images/Shop 4.jpeg'; // Example import for local images
+import Shop5 from './images/Shop 5.jpeg'; // Example import for local images
 
 export default function Home() {
   return (
@@ -49,7 +54,7 @@ export default function Home() {
               transition={{ duration: 0.3 }}
             >
               <img 
-                src="src/images/Shop 1.jpeg" 
+                src={Shop1} // Correct image import
                 alt="Beauty Shop Interior 1" 
                 className="w-full h-auto object-cover rounded-lg"
               />
@@ -60,7 +65,7 @@ export default function Home() {
               transition={{ duration: 0.3 }}
             >
               <img 
-                src="src/images/Shop 2.jpeg" 
+                src={Shop2} // Correct image import
                 alt="Beauty Shop Interior 2" 
                 className="w-full h-auto object-cover rounded-lg"
               />
@@ -71,7 +76,7 @@ export default function Home() {
               transition={{ duration: 0.3 }}
             >
               <img 
-                src="src/images/Shop 3.jpeg" 
+                src={Shop3} // Correct image import
                 alt="Beauty Shop Interior 3" 
                 className="w-full h-auto object-cover rounded-lg"
               />
@@ -82,7 +87,7 @@ export default function Home() {
               transition={{ duration: 0.3 }}
             >
               <img 
-                src="src/images/Shop 4.jpeg" 
+                src={Shop4} // Correct image import
                 alt="Beauty Shop Interior 4" 
                 className="w-full h-auto object-cover rounded-lg"
               />
@@ -93,7 +98,7 @@ export default function Home() {
               transition={{ duration: 0.3 }}
             >
               <img 
-                src="src/images/Shop 5.jpeg" 
+                src={Shop5} // Correct image import
                 alt="Beauty Shop Interior 5" 
                 className="w-full h-auto object-cover rounded-lg"
               />
