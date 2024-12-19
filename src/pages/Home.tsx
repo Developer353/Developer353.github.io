@@ -1,11 +1,13 @@
 import { motion } from 'framer-motion';
 import { Sparkles } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import Shop1 from './images/Shop 1.jpeg'; // Example import for local images
-import Shop2 from './images/Shop 2.jpeg'; // Example import for local images
-import Shop3 from './images/Shop 3.jpeg'; // Example import for local images
-import Shop4 from './images/Shop 4.jpeg'; // Example import for local images
-import Shop5 from './images/Shop 5.jpeg'; // Example import for local images
+
+// Importing images from src/images
+import Shop1 from '../images/Shop 1.jpeg';
+import Shop2 from '../images/Shop 2.jpeg';
+import Shop3 from '../images/Shop 3.jpeg';
+import Shop4 from '../images/Shop 4.jpeg';
+import Shop5 from '../images/Shop 5.jpeg';
 
 export default function Home() {
   return (
@@ -48,57 +50,66 @@ export default function Home() {
             Discover Our Beauty Space
           </motion.h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            {/* Image 1 */}
             <motion.div 
               className="overflow-hidden rounded-lg shadow-lg"
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
             >
               <img 
-                src={Shop1} // Correct image import
+                src={Shop1} 
                 alt="Beauty Shop Interior 1" 
                 className="w-full h-auto object-cover rounded-lg"
               />
             </motion.div>
+
+            {/* Image 2 */}
             <motion.div 
               className="overflow-hidden rounded-lg shadow-lg"
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
             >
               <img 
-                src={Shop2} // Correct image import
+                src={Shop2} 
                 alt="Beauty Shop Interior 2" 
                 className="w-full h-auto object-cover rounded-lg"
               />
             </motion.div>
+
+            {/* Image 3 */}
             <motion.div 
               className="overflow-hidden rounded-lg shadow-lg"
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
             >
               <img 
-                src={Shop3} // Correct image import
+                src={Shop3} 
                 alt="Beauty Shop Interior 3" 
                 className="w-full h-auto object-cover rounded-lg"
               />
             </motion.div>
+
+            {/* Image 4 */}
             <motion.div 
               className="overflow-hidden rounded-lg shadow-lg"
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
             >
               <img 
-                src={Shop4} // Correct image import
+                src={Shop4} 
                 alt="Beauty Shop Interior 4" 
                 className="w-full h-auto object-cover rounded-lg"
               />
             </motion.div>
+
+            {/* Image 5 */}
             <motion.div 
               className="overflow-hidden rounded-lg shadow-lg"
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
             >
               <img 
-                src={Shop5} // Correct image import
+                src={Shop5} 
                 alt="Beauty Shop Interior 5" 
                 className="w-full h-auto object-cover rounded-lg"
               />
