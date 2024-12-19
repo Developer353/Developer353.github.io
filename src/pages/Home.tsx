@@ -30,6 +30,77 @@ export default function Home() {
           Discover Our World
         </Link>
       </motion.div>
+
+      {/* Gallery Section */}
+      <section className="mt-16">
+        <div className="container mx-auto px-4 text-center">
+          <motion.h2 
+            className="text-3xl md:text-4xl font-bold text-gold-gradient mb-8"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.6 }}
+          >
+            Discover Our Beauty Space
+          </motion.h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            <motion.div 
+              className="overflow-hidden rounded-lg shadow-lg"
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.3 }}
+            >
+              <img 
+                src="src/images/Shop 1.jpeg" 
+                alt="Beauty Shop Interior 1" 
+                className="w-full h-auto object-cover rounded-lg"
+              />
+            </motion.div>
+            <motion.div 
+              className="overflow-hidden rounded-lg shadow-lg"
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.3 }}
+            >
+              <img 
+                src="src/images/Shop 2.jpeg" 
+                alt="Beauty Shop Interior 2" 
+                className="w-full h-auto object-cover rounded-lg"
+              />
+            </motion.div>
+            <motion.div 
+              className="overflow-hidden rounded-lg shadow-lg"
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.3 }}
+            >
+              <img 
+                src="src/images/Shop 3.jpeg" 
+                alt="Beauty Shop Interior 3" 
+                className="w-full h-auto object-cover rounded-lg"
+              />
+            </motion.div>
+            <motion.div 
+              className="overflow-hidden rounded-lg shadow-lg"
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.3 }}
+            >
+              <img 
+                src="src/images/Shop 4.jpeg" 
+                alt="Beauty Shop Interior 4" 
+                className="w-full h-auto object-cover rounded-lg"
+              />
+            </motion.div>
+            <motion.div 
+              className="overflow-hidden rounded-lg shadow-lg"
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.3 }}
+            >
+              <img 
+                src="src/images/Shop 5.jpeg" 
+                alt="Beauty Shop Interior 5" 
+                className="w-full h-auto object-cover rounded-lg"
+              />
+            </motion.div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
