@@ -28,9 +28,10 @@ export default function Navbar() {
           {/* Desktop navigation */}
           <nav className="hidden md:flex items-center space-x-6">
             <ul className="flex space-x-6">
-              {[
+              {[ 
                 ['Home', '/'],
                 ['Services', '/services'],
+                ['Book Us', '/book-us'],  // Move "Book Us" after "Services"
                 ['Products', '/products'],
                 ['About', '/about'],
                 ['Contact', '/contact'],
@@ -61,9 +62,10 @@ export default function Navbar() {
         {isMenuOpen && (
           <nav className="md:hidden mt-4">
             <ul className="flex flex-col space-y-2">
-              {[
+              {[ 
                 ['Home', '/'],
                 ['Services', '/services'],
+                ['Book Us', '/book-us'],  // Move "Book Us" after "Services" for mobile
                 ['Products', '/products'],
                 ['About', '/about'],
                 ['Contact', '/contact'],
