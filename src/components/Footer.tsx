@@ -27,11 +27,11 @@ export default function Footer() {
               className="h-12"
             />
           </a>
-          {/* Nealwolf Logo */}
-          <a href="https://www.nealwolf.com/" target="_blank" rel="noopener noreferrer">
+          {/* Neal & Wolf Logo */}
+          <a href="https://www.nealandwolf.com/" target="_blank" rel="noopener noreferrer">
             <img 
-              src="https://seekvectorlogo.com/wp-content/uploads/2019/06/nealwolf-vector-logo.png" 
-              alt="Nealwolf Logo" 
+              src="https://seekvectorlogo.com/wp-content/uploads/2019/06/nealandwolf-vector-logo.png" 
+              alt="Neal & Wolf Logo" 
               className="h-12"
             />
           </a>
