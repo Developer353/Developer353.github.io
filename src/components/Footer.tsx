@@ -1,4 +1,5 @@
 import { Sparkles } from 'lucide-react';
+import { FaOlaplex, FaWella, FaNealAndWolf, FaCircadia, FaDermalogica } from 'react-icons/fa';
 
 export default function Footer() {
   return (
@@ -11,45 +12,25 @@ export default function Footer() {
 
         {/* Partner Logos */}
         <div className="flex justify-center gap-8 mb-4">
-          {/* Olaplex Logo */}
+          {/* Olaplex Icon */}
           <a href="https://www.olaplex.com/" target="_blank" rel="noopener noreferrer">
-            <img 
-              src="https://seekvectorlogo.com/wp-content/uploads/2019/06/olaplex-vector-logo.png" 
-              alt="Olaplex Logo" 
-              className="h-12"
-            />
+            <FaOlaplex size={40} className="text-white hover:text-gold-400" />
           </a>
-          {/* Wella Logo */}
+          {/* Wella Icon */}
           <a href="https://www.wella.com/" target="_blank" rel="noopener noreferrer">
-            <img 
-              src="https://seekvectorlogo.com/wp-content/uploads/2020/04/wella-vector-logo.png" 
-              alt="Wella Logo" 
-              className="h-12"
-            />
+            <FaWella size={40} className="text-white hover:text-gold-400" />
           </a>
-          {/* Neal & Wolf Logo */}
-          <a href="https://www.nealandwolf.com/" target="_blank" rel="noopener noreferrer">
-            <img 
-              src="https://seekvectorlogo.com/wp-content/uploads/2019/06/nealandwolf-vector-logo.png" 
-              alt="Neal & Wolf Logo" 
-              className="h-12"
-            />
+          {/* Neal & Wolf Icon */}
+          <a href="https://www.nealwolf.com/" target="_blank" rel="noopener noreferrer">
+            <FaNealAndWolf size={40} className="text-white hover:text-gold-400" />
           </a>
-          {/* Circadia Logo */}
+          {/* Circadia Icon */}
           <a href="https://www.circadia.com/" target="_blank" rel="noopener noreferrer">
-            <img 
-              src="https://seekvectorlogo.com/wp-content/uploads/2019/06/circadia-vector-logo.png" 
-              alt="Circadia Logo" 
-              className="h-12"
-            />
+            <FaCircadia size={40} className="text-white hover:text-gold-400" />
           </a>
-          {/* Dermalogica Logo */}
+          {/* Dermalogica Icon */}
           <a href="https://www.dermalogica.com/" target="_blank" rel="noopener noreferrer">
-            <img 
-              src="https://seekvectorlogo.com/wp-content/uploads/2019/06/dermalogica-vector-logo.png" 
-              alt="Dermalogica Logo" 
-              className="h-12"
-            />
+            <FaDermalogica size={40} className="text-white hover:text-gold-400" />
           </a>
         </div>
 
