@@ -20,6 +20,7 @@ export default function About() {
   return (
     <div className="bg-white min-h-screen py-16 md:py-24">
       <div className="container mx-auto px-4">
+        {/* Header Section with Animation */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -36,14 +37,15 @@ export default function About() {
           </p>
         </motion.div>
 
+        {/* Map Section with Animation */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="card"
+          className="card shadow-lg p-6 rounded-lg bg-white"
         >
-          <h2 className="text-2xl font-semibold mb-4">Visit Our Location</h2>
-          <div className="h-[400px] rounded-lg overflow-hidden">
+          <h2 className="text-2xl font-semibold mb-4 text-gray-800">Visit Our Location</h2>
+          <div className="h-[400px] rounded-lg overflow-hidden mb-6">
             <MapContainer 
               center={position} 
               zoom={15} 
@@ -61,15 +63,62 @@ export default function About() {
               </Marker>
             </MapContainer>
           </div>
-          <div className="mt-4 text-center">
+          <div className="text-center">
             <a
               href="https://www.google.com/maps/place/54+Sewardstone+Rd,+London+E4+7PR"
               target="_blank"
               rel="noopener noreferrer"
-              className="button inline-block"
+              className="bg-gold-gradient text-white px-6 py-3 rounded-md text-lg font-semibold transition duration-300 hover:bg-gold-500"
             >
               Get Directions
             </a>
+          </div>
+        </motion.div>
+
+        {/* Partnered Brands Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          className="mt-12 text-center"
+        >
+          <h2 className="text-2xl font-semibold mb-4 text-gray-800">Our Partners</h2>
+          <div className="flex justify-center gap-8">
+            <div className="flex items-center justify-center w-24">
+              <img
+                src="/src/images/Shop 1.jpeg" 
+                alt="Shop 1"
+                className="w-full h-auto object-contain"
+              />
+            </div>
+            <div className="flex items-center justify-center w-24">
+              <img
+                src="/src/images/Shop 2.jpeg" 
+                alt="Shop 2"
+                className="w-full h-auto object-contain"
+              />
+            </div>
+            <div className="flex items-center justify-center w-24">
+              <img
+                src="/src/images/Shop 3.jpeg" 
+                alt="Shop 3"
+                className="w-full h-auto object-contain"
+              />
+            </div>
+            <div className="flex items-center justify-center w-24">
+              <img
+                src="/src/images/Shop 4.jpeg" 
+                alt="Shop 4"
+                className="w-full h-auto object-contain"
+              />
+            </div>
+            <div className="flex items-center justify-center w-24">
+              <img
+                src="/src/images/Shop 5.jpeg" 
+                alt="Shop 5"
+                className="w-full h-auto object-contain"
+              />
+            </div>
           </div>
         </motion.div>
       </div>
