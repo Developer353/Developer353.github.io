@@ -8,20 +8,20 @@ export default function Auth() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
-  const { signIn, signUp, signInWithGoogle } = useAuth();
+  const { signIn, signUp } = useAuth();
   const navigate = useNavigate();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setError('');
-
+    
     try {
       if (isLogin) {
         await signIn(email, password);
       } else {
         await signUp(email, password);
       }
-      navigate('/profile'); // Redirect to profile page or dashboard after successful login/signup
+      navigate('/profile');
     } catch (err) {
       setError(err instanceof Error ? err.message : 'An error occurred');
     }
@@ -87,16 +87,6 @@ export default function Auth() {
                 className="text-gold-600 hover:text-gold-700"
               >
                 {isLogin ? "Don't have an account? Sign up" : 'Already have an account? Sign in'}
-              </button>
-            </div>
-
-            <div className="mt-6 text-center">
-              {/* Google Sign-in Button */}
-              <button
-                onClick={signInWithGoogle}
-                className="text-white bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-md w-full mt-2"
-              >
-                Sign in with Google
               </button>
             </div>
           </div>
