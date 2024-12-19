@@ -12,17 +12,17 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Auth from './pages/Auth';
 import Profile from './pages/Profile';
+import BookUs from './pages/BookUs'; // Import the new BookUs page
 import Footer from './components/Footer';
 
 function ProtectedRoute({ children }: { children: JSX.Element }) {
   const { user } = useAuth();
 
   if (!user) {
-    // If the user is not authenticated, redirect them to the Auth page
     return <Navigate to="/auth" />;
   }
 
-  return children;  // If user is authenticated, show the requested route
+  return children;  // Show page if authenticated
 }
 
 function App() {
@@ -51,6 +51,7 @@ function App() {
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/auth" element={<Auth />} />
                 <Route path="/profile" element={<ProtectedRoute><Profile /></ProtectedRoute>} />
+                <Route path="/book-us" element={<BookUs />} /> {/* Add route for Book Us page */}
               </Routes>
             </motion.main>
           </AnimatePresence>
