@@ -21,27 +21,47 @@ export default function Footer() {
         <div className="flex justify-center gap-8 mb-4">
           {/* Olaplex Logo */}
           <a href="https://www.olaplex.com/" target="_blank" rel="noopener noreferrer">
-            <img src={olaplexLogo} alt="Olaplex" className="w-40 h-auto object-contain hover:scale-105 transition-transform" />
+            <img 
+              src={olaplexLogo} 
+              alt="Olaplex" 
+              className="w-32 h-32 object-contain hover:scale-105 transition-transform"
+            />
           </a>
 
           {/* Wella Logo */}
           <a href="https://www.wella.com/" target="_blank" rel="noopener noreferrer">
-            <img src={wellaLogo} alt="Wella" className="w-40 h-auto object-contain hover:scale-105 transition-transform" />
+            <img 
+              src={wellaLogo} 
+              alt="Wella" 
+              className="w-32 h-32 object-contain hover:scale-105 transition-transform"
+            />
           </a>
 
           {/* Neal & Wolf Logo */}
           <a href="https://www.nealwolf.com/" target="_blank" rel="noopener noreferrer">
-            <img src={nealwolfLogo} alt="Neal & Wolf" className="w-40 h-auto object-contain hover:scale-105 transition-transform" />
+            <img 
+              src={nealwolfLogo} 
+              alt="Neal & Wolf" 
+              className="w-32 h-32 object-contain hover:scale-105 transition-transform"
+            />
           </a>
 
           {/* Circadia Logo */}
           <a href="https://www.circadia.com/" target="_blank" rel="noopener noreferrer">
-            <img src={circadiaLogo} alt="Circadia" className="w-40 h-auto object-contain hover:scale-105 transition-transform" />
+            <img 
+              src={circadiaLogo} 
+              alt="Circadia" 
+              className="w-32 h-32 object-contain hover:scale-105 transition-transform"
+            />
           </a>
 
           {/* Dermalogica Logo */}
           <a href="https://www.dermalogica.com/" target="_blank" rel="noopener noreferrer">
-            <img src={dermalogicaLogo} alt="Dermalogica" className="w-40 h-auto object-contain hover:scale-105 transition-transform" />
+            <img 
+              src={dermalogicaLogo} 
+              alt="Dermalogica" 
+              className="w-32 h-32 object-contain hover:scale-105 transition-transform"
+            />
           </a>
         </div>
 
