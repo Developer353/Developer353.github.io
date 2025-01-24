@@ -2,12 +2,12 @@ import { Sparkles } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 // Importing images
-import circadiaLogo from '../images/circadia_logo.jpg';
+import almaLogo from '../images/alma_logo.jpg'; // Import Alma logo
 import dermalogicaLogo from '../images/dermalogica_logo.jpg';
 import nealwolfLogo from '../images/nealwolf_logo.jpg';
-import olaplexLogo from '../images/olaplex_logo.jpg';
 import wellaLogo from '../images/wella_logo.jpg';
-import almaLogo from '../images/alma_logo.jpg'; // Import Alma logo
+import olaplexLogo from '../images/olaplex_logo.jpg';
+import circadiaLogo from '../images/circadia_logo.jpg';
 
 export default function Footer() {
   return (
@@ -20,38 +20,11 @@ export default function Footer() {
 
         {/* Partner Logos */}
         <div className="flex justify-center gap-8 mb-4 flex-wrap">
-          {/* Olaplex Logo */}
-          <a href="https://www.olaplex.com/" target="_blank" rel="noopener noreferrer">
+          {/* Alma Logo */}
+          <a href="https://almalasers.co.uk/" target="_blank" rel="noopener noreferrer">
             <img 
-              src={olaplexLogo} 
-              alt="Olaplex" 
-              className="w-32 h-32 object-contain hover:scale-105 transition-transform"
-            />
-          </a>
-
-          {/* Wella Logo */}
-          <a href="https://www.wella.com/" target="_blank" rel="noopener noreferrer">
-            <img 
-              src={wellaLogo} 
-              alt="Wella" 
-              className="w-32 h-32 object-contain hover:scale-105 transition-transform"
-            />
-          </a>
-
-          {/* Neal & Wolf Logo */}
-          <a href="https://www.nealwolf.com/" target="_blank" rel="noopener noreferrer">
-            <img 
-              src={nealwolfLogo} 
-              alt="Neal & Wolf" 
-              className="w-32 h-32 object-contain hover:scale-105 transition-transform"
-            />
-          </a>
-
-          {/* Circadia Logo */}
-          <a href="https://www.circadia.com/" target="_blank" rel="noopener noreferrer">
-            <img 
-              src={circadiaLogo} 
-              alt="Circadia" 
+              src={almaLogo} 
+              alt="Alma" 
               className="w-32 h-32 object-contain hover:scale-105 transition-transform"
             />
           </a>
@@ -65,11 +38,38 @@ export default function Footer() {
             />
           </a>
 
-          {/* Alma Logo */}
-          <a href="https://almalasers.co.uk/" target="_blank" rel="noopener noreferrer">
+          {/* Neal & Wolf Logo */}
+          <a href="https://www.nealwolf.com/" target="_blank" rel="noopener noreferrer">
             <img 
-              src={almaLogo} 
-              alt="Alma" 
+              src={nealwolfLogo} 
+              alt="Neal & Wolf" 
+              className="w-32 h-32 object-contain hover:scale-105 transition-transform"
+            />
+          </a>
+
+          {/* Wella Logo */}
+          <a href="https://www.wella.com/" target="_blank" rel="noopener noreferrer">
+            <img 
+              src={wellaLogo} 
+              alt="Wella" 
+              className="w-32 h-32 object-contain hover:scale-105 transition-transform"
+            />
+          </a>
+
+          {/* Olaplex Logo */}
+          <a href="https://www.olaplex.com/" target="_blank" rel="noopener noreferrer">
+            <img 
+              src={olaplexLogo} 
+              alt="Olaplex" 
+              className="w-32 h-32 object-contain hover:scale-105 transition-transform"
+            />
+          </a>
+
+          {/* Circadia Logo */}
+          <a href="https://www.circadia.com/" target="_blank" rel="noopener noreferrer">
+            <img 
+              src={circadiaLogo} 
+              alt="Circadia" 
               className="w-32 h-32 object-contain hover:scale-105 transition-transform"
             />
           </a>
