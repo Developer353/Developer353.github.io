@@ -21,7 +21,7 @@ export default function Footer() {
         {/* Partner Logos */}
         <div className="flex justify-center gap-8 mb-4 flex-wrap">
           {/* Alma Logo */}
-          <a href="https://almalasers.co.uk/" target="_blank" rel="noopener noreferrer">
+          <a href="https://almalasers.com/" target="_blank" rel="noopener noreferrer">
             <img 
               src={almaLogo} 
               alt="Alma" 
