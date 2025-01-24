@@ -1,11 +1,12 @@
 import { Sparkles } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
-// Importing logo images
-import CircadiaLogo from '../images/circadia-logo.webp';
-import DermalogicaLogo from '../images/dermalogica-logo.webp';
-import NealWolfLogo from '../images/neal-wolf-logo.webp';
-import NWLogo from '../images/NW_logo.avif';
-import OlaplexLogo from '../images/olaplex-logo.webp';
+// Importing images
+import circadiaLogo from '../images/circadia_logo.jpg';
+import dermalogicaLogo from '../images/dermalogica_logo.jpg';
+import nealwolfLogo from '../images/nealwolf_logo.jpg';
+import olaplexLogo from '../images/olaplex_logo.jpg';
+import wellaLogo from '../images/wella_logo.jpg';
 
 export default function Footer() {
   return (
@@ -20,48 +21,29 @@ export default function Footer() {
         <div className="flex justify-center gap-8 mb-4">
           {/* Olaplex Logo */}
           <a href="https://www.olaplex.com/" target="_blank" rel="noopener noreferrer">
-            <img
-              src={OlaplexLogo}
-              alt="Olaplex Logo"
-              className="w-16 h-16 object-contain hover:scale-110 transition-transform"
-            />
+            <img src={olaplexLogo} alt="Olaplex" className="w-40 h-auto object-contain hover:scale-105 transition-transform" />
           </a>
-          {/* NW Logo */}
+
+          {/* Wella Logo */}
           <a href="https://www.wella.com/" target="_blank" rel="noopener noreferrer">
-            <img
-              src={NWLogo}
-              alt="NW Logo"
-              className="w-16 h-16 object-contain hover:scale-110 transition-transform"
-            />
+            <img src={wellaLogo} alt="Wella" className="w-40 h-auto object-contain hover:scale-105 transition-transform" />
           </a>
+
           {/* Neal & Wolf Logo */}
           <a href="https://www.nealwolf.com/" target="_blank" rel="noopener noreferrer">
-            <img
-              src={NealWolfLogo}
-              alt="Neal & Wolf Logo"
-              className="w-16 h-16 object-contain hover:scale-110 transition-transform"
-            />
+            <img src={nealwolfLogo} alt="Neal & Wolf" className="w-40 h-auto object-contain hover:scale-105 transition-transform" />
           </a>
+
           {/* Circadia Logo */}
           <a href="https://www.circadia.com/" target="_blank" rel="noopener noreferrer">
-            <img
-              src={CircadiaLogo}
-              alt="Circadia Logo"
-              className="w-16 h-16 object-contain hover:scale-110 transition-transform"
-            />
+            <img src={circadiaLogo} alt="Circadia" className="w-40 h-auto object-contain hover:scale-105 transition-transform" />
           </a>
+
           {/* Dermalogica Logo */}
           <a href="https://www.dermalogica.com/" target="_blank" rel="noopener noreferrer">
-            <img
-              src={DermalogicaLogo}
-              alt="Dermalogica Logo"
-              className="w-16 h-16 object-contain hover:scale-110 transition-transform"
-            />
+            <img src={dermalogicaLogo} alt="Dermalogica" className="w-40 h-auto object-contain hover:scale-105 transition-transform" />
           </a>
         </div>
-
-        {/* Added "Hi" Text */}
-        <p className="text-center text-base text-gold-400 mb-2">Hi</p>
 
         <p className="text-center text-sm md:text-base text-gray-400">
           &copy; {new Date().getFullYear()} Vblush. All rights reserved.
