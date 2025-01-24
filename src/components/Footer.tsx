@@ -7,6 +7,7 @@ import dermalogicaLogo from '../images/dermalogica_logo.jpg';
 import nealwolfLogo from '../images/nealwolf_logo.jpg';
 import olaplexLogo from '../images/olaplex_logo.jpg';
 import wellaLogo from '../images/wella_logo.jpg';
+import almaLogo from '../images/alma_logo.jpg'; // Import Alma logo
 
 export default function Footer() {
   return (
@@ -18,7 +19,7 @@ export default function Footer() {
         </div>
 
         {/* Partner Logos */}
-        <div className="flex justify-center gap-8 mb-4">
+        <div className="flex justify-center gap-8 mb-4 flex-wrap">
           {/* Olaplex Logo */}
           <a href="https://www.olaplex.com/" target="_blank" rel="noopener noreferrer">
             <img 
@@ -60,6 +61,15 @@ export default function Footer() {
             <img 
               src={dermalogicaLogo} 
               alt="Dermalogica" 
+              className="w-32 h-32 object-contain hover:scale-105 transition-transform"
+            />
+          </a>
+
+          {/* Alma Logo */}
+          <a href="https://almalasers.co.uk/" target="_blank" rel="noopener noreferrer">
+            <img 
+              src={almaLogo} 
+              alt="Alma" 
               className="w-32 h-32 object-contain hover:scale-105 transition-transform"
             />
           </a>
