@@ -1,5 +1,11 @@
 import { Sparkles } from 'lucide-react';
-import { FaOlaplex, FaWella, FaNealAndWolf, FaCircadia, FaDermalogica } from 'react-icons/fa';
+
+// Importing logo images
+import CircadiaLogo from '../images/circadia-logo.webp';
+import DermalogicaLogo from '../images/dermalogica-logo.webp';
+import NealWolfLogo from '../images/neal-wolf-logo.webp';
+import NWLogo from '../images/NW_logo.avif';
+import OlaplexLogo from '../images/olaplex-logo.webp';
 
 export default function Footer() {
   return (
@@ -12,25 +18,45 @@ export default function Footer() {
 
         {/* Partner Logos */}
         <div className="flex justify-center gap-8 mb-4">
-          {/* Olaplex Icon */}
+          {/* Olaplex Logo */}
           <a href="https://www.olaplex.com/" target="_blank" rel="noopener noreferrer">
-            <FaOlaplex size={40} className="text-white hover:text-gold-400" />
+            <img
+              src={OlaplexLogo}
+              alt="Olaplex Logo"
+              className="w-16 h-16 object-contain hover:scale-110 transition-transform"
+            />
           </a>
-          {/* Wella Icon */}
+          {/* NW Logo */}
           <a href="https://www.wella.com/" target="_blank" rel="noopener noreferrer">
-            <FaWella size={40} className="text-white hover:text-gold-400" />
+            <img
+              src={NWLogo}
+              alt="NW Logo"
+              className="w-16 h-16 object-contain hover:scale-110 transition-transform"
+            />
           </a>
-          {/* Neal & Wolf Icon */}
+          {/* Neal & Wolf Logo */}
           <a href="https://www.nealwolf.com/" target="_blank" rel="noopener noreferrer">
-            <FaNealAndWolf size={40} className="text-white hover:text-gold-400" />
+            <img
+              src={NealWolfLogo}
+              alt="Neal & Wolf Logo"
+              className="w-16 h-16 object-contain hover:scale-110 transition-transform"
+            />
           </a>
-          {/* Circadia Icon */}
+          {/* Circadia Logo */}
           <a href="https://www.circadia.com/" target="_blank" rel="noopener noreferrer">
-            <FaCircadia size={40} className="text-white hover:text-gold-400" />
+            <img
+              src={CircadiaLogo}
+              alt="Circadia Logo"
+              className="w-16 h-16 object-contain hover:scale-110 transition-transform"
+            />
           </a>
-          {/* Dermalogica Icon */}
+          {/* Dermalogica Logo */}
           <a href="https://www.dermalogica.com/" target="_blank" rel="noopener noreferrer">
-            <FaDermalogica size={40} className="text-white hover:text-gold-400" />
+            <img
+              src={DermalogicaLogo}
+              alt="Dermalogica Logo"
+              className="w-16 h-16 object-contain hover:scale-110 transition-transform"
+            />
           </a>
         </div>
 
