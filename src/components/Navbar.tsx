@@ -2,24 +2,25 @@ import { Link, useLocation } from 'react-router-dom';
 import { Sparkles, Menu, X, User } from 'lucide-react';
 import { useState } from 'react';
 import { useAuth } from '../contexts/AuthContext';
-import logo from '../images/logo.jpg';  // Import your logo image
+import logo from '../images/logo.jpg'; // Import your logo image
 
 export default function Navbar() {
   const location = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { user } = useAuth();
-  
+
   return (
     <header className="bg-black/95 backdrop-blur-sm sticky top-0 z-50 border-b border-gold-400/20">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          {/* Logo Image instead of text */}
+          {/* Logo Image with "BLUSH" text */}
           <Link to="/" className="flex items-center space-x-2">
-            <img src={logo} alt="Vblush Logo" className="w-12 h-12" /> {/* Set the size of your logo */}
+            <img src={logo} alt="Blush Logo" className="w-12 h-12" />
+            <span className="text-2xl font-bold text-gold-gradient">BLUSH</span>
           </Link>
-          
+
           {/* Mobile menu button */}
-          <button 
+          <button
             className="md:hidden text-gold-400"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
@@ -29,10 +30,10 @@ export default function Navbar() {
           {/* Desktop navigation */}
           <nav className="hidden md:flex items-center space-x-6">
             <ul className="flex space-x-6">
-              {[ 
+              {[
                 ['Home', '/'],
                 ['Services', '/services'],
-                ['Book Us', '/book-us'],  // Move "Book Us" after "Services"
+                ['Book Us', '/book-us'], // "Book Us" after "Services"
                 ['Products', '/products'],
                 ['About', '/about'],
                 ['Contact', '/contact'],
@@ -63,10 +64,10 @@ export default function Navbar() {
         {isMenuOpen && (
           <nav className="md:hidden mt-4">
             <ul className="flex flex-col space-y-2">
-              {[ 
+              {[
                 ['Home', '/'],
                 ['Services', '/services'],
-                ['Book Us', '/book-us'],  // Move "Book Us" after "Services" for mobile
+                ['Book Us', '/book-us'], // "Book Us" after "Services" for mobile
                 ['Products', '/products'],
                 ['About', '/about'],
                 ['Contact', '/contact'],
