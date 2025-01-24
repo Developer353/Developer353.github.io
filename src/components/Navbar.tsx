@@ -2,6 +2,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { Sparkles, Menu, X, User } from 'lucide-react';
 import { useState } from 'react';
 import { useAuth } from '../contexts/AuthContext';
+import logo from '../images/logo.jpg';  // Import your logo image
 
 export default function Navbar() {
   const location = useLocation();
@@ -12,9 +13,9 @@ export default function Navbar() {
     <header className="bg-black/95 backdrop-blur-sm sticky top-0 z-50 border-b border-gold-400/20">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
+          {/* Logo Image instead of text */}
           <Link to="/" className="flex items-center space-x-2">
-            <Sparkles className="w-8 h-8 text-gold-400" />
-            <span className="text-2xl font-bold text-gold-gradient">Vblush</span>
+            <img src={logo} alt="Vblush Logo" className="w-12 h-12" /> {/* Set the size of your logo */}
           </Link>
           
           {/* Mobile menu button */}
