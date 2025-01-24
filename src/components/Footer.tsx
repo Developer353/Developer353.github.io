@@ -15,7 +15,7 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-center mb-3 md:mb-4">
           <Sparkles className="w-5 h-5 md:w-6 md:h-6 text-gold-400 mr-2" />
-          <span className="text-lg md:text-xl font-bold text-gold-gradient">Vblush</span>
+          <span className="text-lg md:text-xl font-bold text-gold-gradient">VBLUSH</span>
         </div>
 
         {/* Partner Logos */}
