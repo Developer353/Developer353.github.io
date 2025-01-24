@@ -1,20 +1,32 @@
 import { motion } from 'framer-motion';
 
+// Import images from the 'src/images' folder
+import hydrationImage from '../images/hydration.jpg';
+import agingImage from '../images/aging.jpg';
+import sensitiveImage from '../images/sensitive.jpg';
+import brighteningImage from '../images/brightening.jpg';
+import acneImage from '../images/acne.jpg';
+
 const products = [
   {
-    image: 'https://images.unsplash.com/photo-1571781926291-c477ebfd024b?auto=format&fit=crop&w=800&q=80',
-    title: 'Luxury Serum',
-    description: 'Advanced anti-aging formula with hyaluronic acid and peptides.'
+    image: hydrationImage, // Imported image
+    title: 'Hydrating Serums', // Updated to plural
   },
   {
-    image: 'https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=800&q=80',
-    title: 'Anti-Aging Cream',
-    description: 'Rich moisturizing cream with retinol and vitamin C.'
+    image: agingImage, // Imported image
+    title: 'Anti-Aging Creams', // Updated to plural
   },
   {
-    image: 'https://images.unsplash.com/photo-1617897903246-719242758050?auto=format&fit=crop&w=800&q=80',
-    title: 'Hydrating Lotion',
-    description: 'Lightweight, non-greasy formula for all-day hydration.'
+    image: sensitiveImage, // Imported image
+    title: 'Sensitive Skin Lotions', // Updated to plural
+  },
+  {
+    image: brighteningImage, // Imported image
+    title: 'Brightening Serums', // Updated to plural
+  },
+  {
+    image: acneImage, // Imported image
+    title: 'Acne Treatment Gels', // Updated to plural
   }
 ];
 
@@ -53,7 +65,6 @@ export default function Products() {
                 />
               </div>
               <h2 className="text-xl font-semibold mb-2">{product.title}</h2>
-              <p className="text-gray-600 mb-3">{product.description}</p>
             </motion.div>
           ))}
         </div>
