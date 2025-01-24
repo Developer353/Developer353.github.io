@@ -60,6 +60,9 @@ export default function Footer() {
           </a>
         </div>
 
+        {/* Added "Hi" Text */}
+        <p className="text-center text-base text-gold-400 mb-2">Hi</p>
+
         <p className="text-center text-sm md:text-base text-gray-400">
           &copy; {new Date().getFullYear()} Vblush. All rights reserved.
         </p>
